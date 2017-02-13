@@ -52,11 +52,7 @@ public class FileUpload1 implements ReleaseableObjectPayload<DiskFileItem> {
 
     public DiskFileItem getObject ( String command ) throws Exception {
 
-<<<<<<< HEAD
-        String[] parts = command.split(";");
-=======
         String[] parts = command.split(",");
->>>>>>> 8db72e9cdf5e24b5ad1bbfcc2063c3231eea487c
 
         if ( parts.length == 3 && "copyAndDelete".equals(parts[ 0 ]) ) {
             return copyAndDelete(parts[ 1 ], parts[ 2 ]);
